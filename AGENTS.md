@@ -95,3 +95,16 @@ Stop for human action when required for secrets, live credentials, real-money pa
 ## Model-agnostic core
 
 Core files must not depend on one named model. Tool-specific behavior belongs in `adapters/`.
+
+
+## Reusable skill routing
+
+- New/major UI direction -> `skills/design-architecture/SKILL.md`
+- Reference-led interface build or anti-AI-slop refinement -> `skills/proven-reference-design/SKILL.md`
+- Git branch/worktree choice -> `skills/task-isolation/SKILL.md`
+- Repeated operational logic / service-boundary question -> `skills/code-structure/SKILL.md`
+- Evidence capture depth -> `skills/evidence-driven-testing/SKILL.md`
+- Visual comparison -> `skills/before-after/SKILL.md`
+- Technical prose for commits/PRs/docs -> `skills/human-writing/SKILL.md`
+
+Skills are invoked because the task needs them, not to increase process.
