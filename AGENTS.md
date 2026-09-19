@@ -20,6 +20,16 @@ Do not reopen settled decisions without new evidence.
 
 Discussion is not permission to execute.
 
+## Delivery and evidence state
+
+Execution permission is not delivery status.
+
+Use `core/DELIVERY_STATUS.md` to distinguish Proposed, Implemented Locally, Verified Locally, Committed, CI Verified, Deployed, Production Verified, Deferred, Not Verified, and Blocked.
+
+Use `core/EVIDENCE_MATURITY.md` for architecture/control maturity: Detected, Configured, Verified, Measured, Not Verified, Failed.
+
+Never collapse local success, CI success, deployment, and production verification into "done."
+
 ## Default operating loop
 
 1. Read the relevant README, project docs, task context, and nearby implementation.
@@ -43,6 +53,12 @@ Discussion is not permission to execute.
 - Organic search -> `agents/seo-specialist.md`
 - Analytics/conversion tracking -> `agents/tracking-specialist.md`
 - Persuasive copy -> `skills/copywriting/SKILL.md`
+- Production-readiness review -> `workflows/production-readiness-audit.md`
+- CI/CD or release-gate work -> `skills/ci-cd-release-gates/SKILL.md`
+- Authorization/ownership/trusted-boundary proof -> `skills/trusted-boundary-verification/SKILL.md`
+- Backup/restore/rollback -> `skills/recovery-and-rollback/SKILL.md`
+- Firebase production release -> `skills/firebase-release/SKILL.md`
+- Observability/alerts/incidents -> `skills/observability-incident-response/SKILL.md`
 
 Use the smallest set that materially helps.
 

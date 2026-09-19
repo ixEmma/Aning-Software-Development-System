@@ -56,3 +56,28 @@ Treatment: distilled into `skills/design-architecture/SKILL.md`.
 Use: proven-reference research, reference qualification, brand adaptation, functional-before-polish gate, anti-slop refinement, human review, and production QA.
 
 Treatment: distilled into `skills/proven-reference-design/SKILL.md`. The core workflow is tool-agnostic; Impeccable is optional execution tooling.
+
+
+## Production engineering sources restored in September 2026
+
+### System Architecture & Production Readiness Standard - Notion
+Use: readiness levels, architecture capability status, trust boundaries, reliability, performance, backup/recovery, observability, incident response, CI/CD, rollback, Six Gates, governance.
+
+Treatment: distilled into `core/PRODUCTION_READINESS_STANDARD.md` and `templates/PRODUCTION_READINESS_REVIEW.md`.
+
+### V1 Evidence Workflow - Notion
+Use: Detected/Configured/Verified/Measured evidence maturity, evidence-gap planning, least-privilege passive evidence first, explicit active-test approval, evidence provenance, reassessment.
+
+Treatment: distilled into `core/EVIDENCE_MATURITY.md`, `skills/trusted-boundary-verification/SKILL.md`, and `workflows/production-readiness-audit.md`.
+
+### Lensora production-hardening evidence - Notion and project records
+Use: deterministic clean CI, real-browser CI smoke testing, safe CI initialization without production secrets, synthetic authorization proof, isolated Firestore restore, rollback anchors, alert-delivery evidence, narrow-release accounting.
+
+Treatment: distilled into `case-studies/LENSORA_ENGINEERING_LESSONS.md` and the CI/recovery/Firebase/observability skills.
+
+### Metric Bot foundation-hardening procedure - Notion
+Use: server-validated tenant boundaries, repository-managed Firebase rules, local tests before production rules, timeout/error-path guarantees, structured privacy-safe logging, explicit owner approval gates, dependency-aware deployment.
+
+Treatment: incorporated into trusted-boundary and production-readiness rules.
+
+These are Emmanuel's proven procedures and take precedence over borrowed workflow conventions when they conflict.

@@ -2,6 +2,8 @@
 
 The system has two modes: a lightweight task loop for ordinary work and a deeper lifecycle for serious software or release work.
 
+For serious production claims, use `PRODUCTION_READINESS_STANDARD.md`. For delivery-state reporting, use `DELIVERY_STATUS.md`. For control evidence maturity, use `EVIDENCE_MATURITY.md`.
+
 ## Lightweight task loop
 
 ```text
@@ -19,11 +21,11 @@ Do not create ceremony that costs more than the risk it controls.
 5. Repository and environment setup
 6. Functional implementation in bounded phases
 7. Testing at the correct layer
-8. CI/reproducibility gate
+8. CI/reproducibility gate from a clean environment
 9. Security and reliability hardening
 10. Product/pricing/public-surface synchronization when relevant
 11. Production-readiness gates
-12. Controlled deployment
+12. Controlled, dependency-aware deployment
 13. Production smoke QA
 14. Observability and recovery
 15. Functional UI QA
@@ -42,7 +44,7 @@ For serious releases, review:
 - **Operations** - CI, logs, alerts, deployment, rollback.
 - **Product and governance** - pricing/entitlements, privacy, retention, known limitations.
 
-A gate passes on evidence, not assumption.
+A gate passes on evidence, not assumption. A configured control is not automatically verified, and a locally verified control is not automatically production verified.
 
 ## Product/pricing synchronization
 
