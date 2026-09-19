@@ -1,23 +1,57 @@
 # Aning Software Development System
 
-A personal, model-agnostic operating system for building, reviewing, verifying, and shipping software with AI agents.
+A personal, model-agnostic operating system for building software with AI agents.
 
-This repository is the canonical executable layer for Emmanuel Aning's software-development workflow. It consolidates proven operating rules, reusable agents, atomic skills, workflows, templates, and tool-specific adapters while keeping project-specific product truth inside each product repository.
+This repository is the canonical executable layer for Emmanuel Aning's development workflow. It combines product judgment, bounded implementation, specialist agents, reusable skills, evidence-based verification, and controlled release practices without turning normal development into bureaucracy.
 
-## Status
+## Philosophy
 
-Foundation migration in progress.
+```text
+inspect -> understand -> plan -> approve -> implement narrowly -> review -> verify -> ship with permission
+```
 
-## Core principle
+Each product repository remains the source of truth for its own product decisions, architecture, pricing, limits, and release rules.
 
-Evidence over assumption. Planning, implementation, commit, deployment, and production verification are separate states.
+## Layers
 
-## Sources
+- `AGENTS.md` - master router and non-negotiable rules.
+- `core/` - shared execution principles and lifecycle.
+- `agents/` - reusable specialist roles.
+- `skills/` - atomic reusable techniques.
+- `workflows/` - task-shaped combinations of agents and skills.
+- `templates/` - project-local starting documents.
+- `adapters/` - model/tool-specific integration.
+- `sources/` - provenance and migration history.
 
-The system is being distilled from:
-- Aning Software Development System v1.0 in Notion
-- Emmanuel's established project workflows and release rules
-- selected patterns from `ixEmma/agency-agents`
-- selected patterns from `ixEmma/softwarefactory-skills`
+## Default workflow
 
-Only material with clear reuse rights is copied. Other useful ideas are reimplemented in original language and tracked in `sources/MANIFEST.md`.
+```text
+Emmanuel
+   |
+   v
+Plan only when useful
+   |
+   v
+One appropriate builder
+   |
+   v
+Code Reviewer
+   |
+   v
+Reality Checker
+   |
+   v
+Emmanuel approves merge/deploy
+```
+
+## Status vocabulary
+
+- **PLANNING ONLY** - inspection, reasoning, recommendations. No writes.
+- **READY FOR GO** - scope is approved. Execution has not happened.
+- **EXECUTED LIVE** - the approved change was written and verified.
+
+Planning, implementation, commit, deployment, and production verification are separate states.
+
+## Model-agnostic rule
+
+Core instructions describe what **the agent** should do. Codex, Claude Code, Cursor, ChatGPT, local models, and future tools belong in adapters. The workflow should survive model changes.
