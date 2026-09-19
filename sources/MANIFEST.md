@@ -43,3 +43,16 @@ Every imported/adapted skill should record:
 - local modifications.
 
 If reuse rights are unclear, reimplement the idea instead of copying text or code.
+
+
+## Design system sources
+
+### Reusable Design Taste & UI Language - Notion
+Use: design decision order, intentional composition quality bar, structural DNA, personality separation, and evidence discipline.
+
+Treatment: distilled into `skills/design-architecture/SKILL.md`.
+
+### No-AI-Slop Design - Impeccable Workflow - Notion
+Use: proven-reference research, reference qualification, brand adaptation, functional-before-polish gate, anti-slop refinement, human review, and production QA.
+
+Treatment: distilled into `skills/proven-reference-design/SKILL.md`. The core workflow is tool-agnostic; Impeccable is optional execution tooling.
