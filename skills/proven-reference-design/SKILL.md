@@ -13,6 +13,17 @@ Proven -> Adapt -> Refine -> Verify
 
 ## 1. Understand the real product
 
+## When this workflow is required
+
+Classify visible UI work using the mandatory routing levels in `AGENTS.md`.
+
+- **Level 1:** do not require this full skill for bounded visual bug fixes. Preserve the current system and run focused functional and viewport checks.
+- **Level 2:** consult relevant brand and component references where the changed section needs design judgment. Run proportional critique, simplification, polish, and audit checks without mandatory full-market reference research.
+- **Level 3:** follow the full reference-led workflow below. Obtain approval for the proposed reference stack before implementation, then run functional QA, critique → distill → polish → audit, and human visual review before design acceptance.
+
+Impeccable commands are optional tooling, not proof by themselves. Verify availability before invoking; otherwise apply the same documented review stages manually and disclose that the tool was not run. Record observed evidence and unverified checks honestly. Do not add visual changes outside the approved task scope.
+
+
 Before design/code establish:
 - product/business type;
 - target audience;
