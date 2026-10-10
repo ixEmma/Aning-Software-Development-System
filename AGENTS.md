@@ -128,6 +128,7 @@ Core files must not depend on one named model. Tool-specific behavior belongs in
 ## Reusable skill routing
 
 - New/major UI direction -> `skills/design-architecture/SKILL.md`
+- Frontend task review and evidence -> `workflows/frontend-design-review.md`
 - Reference-led interface build or anti-AI-slop refinement -> `skills/proven-reference-design/SKILL.md`
 - Git branch/worktree choice -> `skills/task-isolation/SKILL.md`
 - Repeated operational logic / service-boundary question -> `skills/code-structure/SKILL.md`
