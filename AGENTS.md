@@ -62,6 +62,18 @@ Never collapse local success, CI success, deployment, and production verificatio
 
 Use the smallest set that materially helps.
 
+
+## Mandatory frontend design routing
+
+For any task touching visible UI, classify the change **before implementation** and state the level, scope, applicable skills, evidence, and approval gate. Product-specific approved design decisions take precedence. Apply the smallest sufficient level; when uncertain, stop and clarify rather than silently widening scope.
+
+- **Level 1 — Bounded visual fix:** spacing, overflow, alignment, or narrow UI bug without new design direction. Use the small-fix workflow and frontend agent as applicable; inspect existing design, preserve behavior, and run focused functional/viewport checks. Do not require reference research or the complete Impeccable sequence.
+- **Level 2 — Component or section change:** significant change to navigation, forms, components, or existing screen composition without a new product-wide direction. Read the project's design system and relevant existing patterns; inspect affected states, capture before/after evidence when meaningful, and run functional, responsive, and accessibility checks. Use targeted critique/distill/polish/audit only when applicable.
+- **Level 3 — New or major interface direction:** new landing page, substantial dashboard/page redesign, new visual language, or major UX flow. Route through `skills/design-architecture/SKILL.md` and `skills/proven-reference-design/SKILL.md`; research and qualify references, present a reference stack, and obtain approval **before** implementation. After functional QA, perform critique → distill → polish → audit (with Impeccable if installed and available; otherwise use the documented methodology and disclose the limitation). Obtain human visual approval for affected desktop/mobile states before claiming design acceptance.
+
+A task's visible scope, risk, and change to approved design—not merely the number of edited files—determine its level. A functionality-only fix does not authorize a redesign. Do not claim that a routing statement, checklist, or successful build proves visual approval or GitHub merge enforcement. Merge/deploy still require separate permission.
+
+
 ## Scope discipline
 
 - Preserve working behavior outside the requested change.
@@ -116,6 +128,7 @@ Core files must not depend on one named model. Tool-specific behavior belongs in
 ## Reusable skill routing
 
 - New/major UI direction -> `skills/design-architecture/SKILL.md`
+- Frontend task review and evidence -> `workflows/frontend-design-review.md`
 - Reference-led interface build or anti-AI-slop refinement -> `skills/proven-reference-design/SKILL.md`
 - Git branch/worktree choice -> `skills/task-isolation/SKILL.md`
 - Repeated operational logic / service-boundary question -> `skills/code-structure/SKILL.md`
